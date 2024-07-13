@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <base href="/"/>
+    <meta charset="utf-8" />
+    <link href="./stylesheets/styles.css" rel="stylesheet" />
+    <title>Lottery Sim</title>
+</head>
+<body>
+    <header id="header">
+        <div class="headerItem">
+            <p>Balance:  $</p>
+            <p id="balance"></p>
+        </div>
+        <div class="headerItem">
+            <p>Current Pot:    $</p>
+            <p id="pot"></p>
+        </div>
+        <div class="headerItem">
+            <p>Profit/Loss:    $</p>
+            <p id="PL"></p>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h1>Last Winning Numbers</h1>
+            <div class="lotteryNumbers" id="lotteryNumbers">
+                <div class="lotteryNumber"></div>
+                <div class="lotteryNumber"></div>
+                <div class="lotteryNumber"></div>
+                <div class="lotteryNumber"></div>
+                <div class="lotteryNumber"></div>
+                <div class="lotteryNumber powerball" id="powerball"></div>
+            </div>
+        </div>
+        <div class="menuSection" id="menuSection">
+            <div class="menuNavBar" id="menuNavBar">
+                <button class="menuNavButton">Pick New Ticket Number</button>
+                <div>
+                    <button class="menuNavButton" onclick="player.generateRandomTicket()">Generate Random Ticket Number</button>
+                    <input type='text' value='' placeholder='Ticket quantity (max 1000)' id="ticketQuantity" max="99"></input>
+                </div>
+                <button class="menuNavButton" onclick="player.clearTickets()">Throw away your tickets :(</button>
+            </div>
+            <div class="playersTickets" id="lotteryTickets">
+
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <button onclick="lottery.generateWinningNumbers()" id="generateWinningNumbersButton">Generate New Winning Numbers!</button>
+    </footer>
+
+    <script src="./javascripts/lotteryScript.js">
+    </script>
+</body>
+</html>

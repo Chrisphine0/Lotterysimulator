@@ -1,0 +1,147 @@
+﻿body
+{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+}
+
+
+header{
+    width: 100vw;
+    height: 10%;
+    flex-wrap: wrap;
+    background: purple;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+    padding: 3px;
+    background: purple;
+}
+
+header p{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+
+}
+
+.headerItem{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    width: auto;
+    color: white;
+}
+
+.lotteryNumbers, .usersNumber{
+    display: flex;
+    justify-content:center;
+    height: auto;
+    width: auto;
+    margin: 5px;
+
+}
+
+.lotteryNumber, .powerball{
+    user-select: none;
+    height: 72px;
+    width: 72px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 1px 0 black;
+}
+
+.powerball{
+    background-color: red;
+}
+
+.smallLotteryNumber{
+    height: 36px;
+    width: 36px;
+    margin: 5px 2px 5px 2px;
+    font-size: 24px;
+
+}
+
+.menuSection{
+    width: 100vw;
+    height:60%;
+    background: grey;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: center;
+    flex-wrap:wrap;
+    overflow:hidden;
+
+}
+
+.menuSection p{
+    margin: 0px 10px 0px 10px;
+}
+
+.menuNavBar{
+    height: auto;
+    width: 98vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    color:black;
+    margin: 0;
+    padding: 3px;
+    position: sticky;
+
+}
+
+.menuButton{
+    height: auto;
+    width: auto;
+    padding: 2px 4px 2px 4px;
+    user-select: none;
+}
+
+.playersTickets{
+    display: flex;
+    justify-content: center;
+    align-content: start;
+    flex-wrap: wrap;
+    width: 100vw;
+    height:90%;
+    overflow-x: hidden;
+
+}
